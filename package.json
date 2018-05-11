@@ -1,0 +1,29 @@
+{
+  "name": "plummediacenter2",
+  "version": "1.0.0",
+  "description": "Roku Scene Graph channel implementing a simple grid and video player.\r This can be enhanced with the following features:\r 1)      Add details screen before video player\r 2)      Add search screen\r 3)      Add loading indicator",
+  "main": "index.js",
+  "scripts": {
+    "monitor": "node monitor.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@code-vicar/rpm": "^1.3.0",
+    "@types/node": "^8.0.30",
+    "another-telnet-client": "^0.1.3",
+    "async": "^2.5.0",
+    "copyfiles": "^1.2.0",
+    "killall": "^1.0.4",
+    "lodash": "^4.17.4",
+    "mkdirp": "^0.5.1",
+    "q": "^1.5.0",
+    "querystring": "^0.2.0",
+    "rimraf": "^2.6.2",
+    "zip-folder": "^1.0.0"
+  },
+  "devDependencies": {
+    "ts-node": "^3.3.0",
+    "typescript": "^2.5.2"
+  }
+}

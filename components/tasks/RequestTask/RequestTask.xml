@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name = "RequestTask" extends = "Task" >
+
+  <interface>
+    <field id="url" type="string" />
+		<field id="completed" type="bool" />
+    <field id="responseJson" type="string" />
+  </interface>
+
+  <script type = "text/brightscript" >
+	<![CDATA[
+
+	sub init()
+		m.top.functionName = "getContent"
+	end sub
+
+	sub getContent()
+		request = createObject("roUrlTransfer")
+		request.setUrl(m.top.url)
+		responseJson = request.GetToString()
+		m.top.responseJson = responseJson
+		m.top.completed = true
+	end sub
+    ]]>
+  </script>
+ 
+</component>

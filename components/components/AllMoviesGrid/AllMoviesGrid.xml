@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="AllMoviesGrid" extends="Group" initialFocus="grid">
+    <children>
+        <PosterGrid id="grid" />
+    </children>
+    <script type="text/brightscript" uri="pkg:/components/components/AllMoviesGrid/AllMoviesGrid.brs" />
+    <script type="text/brightscript" uri="pkg:/source/lib.brs" />
+</component>

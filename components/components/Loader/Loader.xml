@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<component name="Loader" extends="Group">
+    <script type="text/brightscript" uri="pkg:/components/components/Loader/Loader.brs" />
+    <children>
+        <Label
+            id="label"
+            horizAlign="center"
+            width="1280"
+            text="BusySpinner Sample"
+            color="0xffffffff"
+            font="font:LargeBoldSystemFont"
+            translation="[0, 250]" />
+
+            <BusySpinner
+                id="spinner"
+                translation="[570, 300]"
+                control="start"
+                clockwise="true"
+                spinInterval="2" />
+    </children>
+</component>
