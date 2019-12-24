@@ -6,7 +6,7 @@ function Api()
     m.api = {
         getMovies: function(callback, callerScope)
             HttpRequest({
-                url: "http://192.168.1.20:7586/api/movies"
+                url: "http://192.168.1.20:7586:7586/api/movies"
             }, function(data, scope) 
                 scope.callback(data, scope.callerScope)
             end function, {callback: callback, callerScope: callerScope})

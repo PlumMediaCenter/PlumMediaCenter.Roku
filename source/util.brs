@@ -1,6 +1,8 @@
 function util_findServerUrls(ipAddresses=invalid)
-    di = CreateObject("roDeviceInfo")
-    b_printc("di: ", di)
+    deviceInfo = CreateObject("roDeviceInfo")
+    b_printc("device info: ", deviceInfo)
+
+    taskService = GetTaskService()
     
     info = di.GetConnectionInfo()
     ip = info.ip
@@ -28,7 +30,7 @@ function util_findServerUrls(ipAddresses=invalid)
         })
     end for
     'wait for all of the requests to finish
-    task_waitAll(tasks)
+    taskService.waitAll(tasks)
     
     urls = []
     'find any non-failed requests

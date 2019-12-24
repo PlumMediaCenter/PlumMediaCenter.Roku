@@ -4,6 +4,6 @@
     <children>
         <PosterGrid id="grid" />
     </children>
-    <script type="text/brightscript" uri="pkg:/components/components/AllMoviesGrid/AllMoviesGrid.brs" />
-    <script type="text/brightscript" uri="pkg:/source/lib.brs" />
+    <script type="text/brightscript" uri="AllMoviesGrid.brs" />
+    <script type="text/brightscript" uri="pkg:/source/http.brs" />
 </component>

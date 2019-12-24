@@ -1,12 +1,13 @@
 sub init()
     m.grid = m.top.FindNode("grid")
     m.grid.visible = true
-    m.grid.translation="[50,50]" 
-    m.grid.basePosterSize="[200,300]" 
-    m.grid.itemSpacing="[32,32]" 
-    m.grid.caption1NumLines="0" 
-    m.grid.caption2NumLines="0" 
-    
+    m.grid.translation="[50,50]"
+    m.grid.basePosterSize="[200,300]"
+    m.grid.itemSpacing="[32,32]"
+    m.grid.caption1NumLines="0"
+    m.grid.caption2NumLines="0"
+
+    HttpGet("", "")
     Api().getMovies(function(movies, m)
         m.grid.numColumns = 5
         m.grid.numRows = movies.count() / m.grid.numColumns + 1
@@ -27,11 +28,11 @@ sub init()
     end function, m)
 end sub
 
-function onKeyEvent(key as String, press as Boolean) as Boolean
+function onKeyEvent(key as string, press as boolean) as boolean
     'only handle the keyup events
     if press = false then
         if key = "ok" then
-            
+
         end if
     end if
 end function
